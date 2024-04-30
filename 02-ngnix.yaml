@@ -1,0 +1,14 @@
+- nmae: install and run ngnix
+  hosts: web
+  become: yes
+  tasks:
+  - name: install the ngnix
+    ansilble.builtin.dnf:
+    name: ngnix
+    state: latest
+  - name: start the ngnix
+    ansilble.builtin.service:
+    name: ngnix
+    state: started 
+    enabled: yes
+
