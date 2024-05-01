@@ -5,12 +5,12 @@
     trainer: "sivakumar"
     duration: "120hrs"
   tasks:
-  - nmae: print override information
+  - name: print override information
     vars: #declaring variables in task level
     course: "devops"
     ansilble.builtin.debug:
       msg: "hi we are learning {{course}} from trainer {{trainer}} duration is {{duration}}" 
 
-  - nmae: print information
-    ansilble.builtin.debug:
+  - name: print information
+    ansible.builtin.debug:
       msg: "hi we are learning {{course}} from trainer {{trainer}} duration is {{duration}}" 
