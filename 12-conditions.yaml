@@ -1,0 +1,17 @@
+- nmae: conditions
+  hosts: localhost
+  become: yes
+  tasks: 
+  - nmae: check user exists or not
+    ansilble.builtin.command: id expense
+    register: user
+    ignore_errors: true
+  - nmae: print user information
+    ansilble.builtin.debug:
+      msg: "user info: {{user}}"  
+  - nmae: create user
+    ansilble.builtin.command: useradd expense
+    when: user.rc != 0 
+  - name: say hello
+    ansilble.builtin.debug:
+      msg: "hello"
