@@ -1,0 +1,14 @@
+- nmae: variables from files
+  hosts: localhost
+  vars_files:
+  vars_prompt:
+  - name: username
+    prompt: pls enetr usernmae
+    private: false
+  - name: password
+    prompt: pls enter password
+    private: false
+  tasks: 
+  - nmae: print information
+    ansilble.builtin.debug:
+      msg: "hi username: {{username}}. passwod is: {{password}}"
