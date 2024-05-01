@@ -1,5 +1,5 @@
 - nmae: install and run ngnix
-  hosts: web
+  hosts: localhost
   become: yes
   tasks:
   - name: install the ngnix
