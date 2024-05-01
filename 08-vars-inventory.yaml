@@ -1,0 +1,6 @@
+- nmae: variables from inventory
+  hosts: localhost  
+  tasks: 
+  - nmae: print information
+    ansilble.builtin.debug:
+      msg: "hi we are learning {{course}} from trainer {{trainer}} duration is {{duration}}"
