@@ -1,14 +1,14 @@
-- name: install and run nginx
+- name: install and run http
   hosts: localhost
   become: yes
   tasks:
-  - name: install the ngnix
+  - name: install the http
     ansible.builtin.dnf:
-      name: nginx
+      name: http
       state: latest
-  - name: start the nginx
+  - name: start the http
     ansible.builtin.service:
-      name: nginx
+      name: httpd
       state: started 
       enabled: yes
 
