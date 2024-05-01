@@ -1,0 +1,6 @@
+- nmae: variables from arguments
+  hosts: localhost
+  tasks:
+  - name: get variables from arguments
+    ansilble.builtin.debug:
+      msg: "hello {{person}}, good {{wishes}}"
