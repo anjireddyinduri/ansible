@@ -1,5 +1,5 @@
 - name: ping the server
-  hosts: local host
+  hosts: 54.234.154.54
   tasks: #here we have to mentioned list of taks /modules/collections
   - name: ping the server
     ansilble.builtin.ping:
