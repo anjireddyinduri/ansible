@@ -2,6 +2,6 @@
   hosts: localhost
   tasks: #here we have to mentioned list of taks /modules/collections
   - name: ping the server
-    ansilble.builtin.debug:
-      msg: "ping happend"
+    ansible.builtin.ping:
+      
     
