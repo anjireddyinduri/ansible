@@ -2,5 +2,6 @@
   hosts: localhost
   tasks: #here we have to mentioned list of taks /modules/collections
   - name: ping the server
-    ansilble.builtin.ping:
+    ansilble.builtin.debug:
+      msg: "ping happend"
     
