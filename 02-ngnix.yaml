@@ -1,4 +1,4 @@
-- nmae: install and run ngnix
+- name: install and run ngnix
   hosts: localhost
   become: yes
   tasks:
