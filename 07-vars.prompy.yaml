@@ -1,6 +1,6 @@
 - name: variables from files
-  hosts: localhost
-  #vars_files:
+  #hosts: localhost
+  vars_files:
   vars_prompt:
   - name: username
     prompt: pls enetr usernmae
