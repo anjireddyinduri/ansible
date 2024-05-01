@@ -5,9 +5,9 @@
     ansible.builtin.debug:
       msg: "hello iam from play1 and tasks1"
 
-  #- name: play2
-   # hosts: localhost
-    #tasks:
-    #- name: play2 and tasks1
-     # ansible.builtin.debug:
-      #  msg: "hello iam from play2 an dtasks1"    
+  - name: play2
+    hosts: localhost
+    tasks:
+    - name: play2 and tasks1
+      ansible.builtin.debug:
+        msg: "hello iam from play2 an dtasks1"    
