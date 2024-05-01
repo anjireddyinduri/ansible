@@ -1,0 +1,8 @@
+- nmae: variables from files
+  hosts: localhost
+  vars_files:
+  - vars.yaml
+  tasks: 
+  - nmae: print information
+    ansilble.builtin.debug:
+      msg: "hi we are learning {{course}} from trainer {{trainer}} duration is {{duration}}"
