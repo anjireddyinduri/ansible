@@ -1,4 +1,4 @@
-- nmae: variables preference
+- name: variables preference
   hosts: localhost
   vars:
     wishes: "good morning from play variables"
