@@ -11,10 +11,11 @@
     ansible.builtin.debug:
        msg:  "user info is {{user}}"
 
-   # register: user
-    # ignore_errors: true
-  # - name: print user information
-  #   ansilble.builtin.debug:
+  
+  - name: create user
+    ansilble.builtin.command: useradd expense
+    
+
   #     msg: "user info: {{user}}"  
   # - name: create user
   #   ansilble.builtin.command: useradd expense
