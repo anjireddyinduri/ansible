@@ -1,9 +1,9 @@
 - name: variables preference
-  hosts: localhost
-    vars:
-      wishes: "good morning from play variables"
+  hosts:  localhost
+  vars:
+    wishes: "good morning from play variables"
   vars_files:
-    - vars.yaml
+  - vars.yaml
   # vars_prompt:
   #   - name: wishes
   #     prompt: pls enetr wishes 
