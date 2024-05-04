@@ -1,5 +1,5 @@
 - name: printing variables
-  hosts: localhost  
+  hosts: myhosts  
 
   course: "devops with AWS"
   trainer: "sivakumar reddy M"
