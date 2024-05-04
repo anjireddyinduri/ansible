@@ -10,7 +10,7 @@
       devops: 3 
       aws: 2
       docker: 4
-    realproject: yes #this is called boolean 
+    realproject: true #this is called boolean 
   tasks:
   - name: print variables
     ansible.builtin.debug:
