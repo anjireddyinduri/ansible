@@ -3,16 +3,16 @@
   become: yes
   tasks: 
   - name: check user exists or not
-    ansible.builtin.user: 
-      name: expense
+    ansible.builtin.user:  
+      register: user
     ignore_errors:  true
 
-  - name: say hello
+  #- name: print user info:
     ansible.builtin.debug:
        msg:  "hello"
 
-  #   register: user
-  #   ignore_errors: true
+   # register: user
+    # ignore_errors: true
   # - name: print user information
   #   ansilble.builtin.debug:
   #     msg: "user info: {{user}}"  
