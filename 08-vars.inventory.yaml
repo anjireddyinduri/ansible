@@ -1,9 +1,9 @@
 - name: printing variables
   hosts: localhost  
 
-  course: "devops with AWS"
-  trainer: "sivakumar reddy M"
-  duration: "3.5 months"
+  #course: "devops with AWS"
+  #trainer: "sivakumar reddy M"
+  #duration: "3.5 months"
 
   #wishes: "good morning from variable file"
   tasks: 
