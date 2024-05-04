@@ -5,7 +5,7 @@
   trainer: "sivakumar reddy M"
   duration: "3.5 months"
 
-  #wishes: "good morning from variable file"
+  wishes: "good morning from variable file"
   tasks: 
   - name: print information
     ansible.builtin.debug:
