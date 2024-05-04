@@ -5,9 +5,9 @@
   - name: check user exists or not
     ansilble.builtin.command: id expense
 
-  - name: say hello
-    ansilble.builtin.debug:
-      msg:  "hello"
+  # - name: say hello
+  #   ansilble.builtin.debug:
+  #     msg:  "hello"
 
   #   register: user
   #   ignore_errors: true
