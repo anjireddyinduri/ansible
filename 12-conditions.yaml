@@ -7,7 +7,7 @@
 
   - name: say hello
     ansilble.builtin.debug:
-      msg: "hello"
+      msg:  "hello"
 
   #   register: user
   #   ignore_errors: true
