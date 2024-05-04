@@ -4,14 +4,19 @@
   tasks: 
   - name: check user exists or not
     ansilble.builtin.command: id expense
-    register: user
-    ignore_errors: true
-  - name: print user information
-    ansilble.builtin.debug:
-      msg: "user info: {{user}}"  
-  - name: create user
-    ansilble.builtin.command: useradd expense
-    when: user.rc != 0 
+
   - name: say hello
     ansilble.builtin.debug:
       msg: "hello"
+
+  #   register: user
+  #   ignore_errors: true
+  # - name: print user information
+  #   ansilble.builtin.debug:
+  #     msg: "user info: {{user}}"  
+  # - name: create user
+  #   ansilble.builtin.command: useradd expense
+  #   when: user.rc != 0 
+  # - name: say hello
+  #   ansilble.builtin.debug:
+  #     msg: "hello"
