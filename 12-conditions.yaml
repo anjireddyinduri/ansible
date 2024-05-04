@@ -13,9 +13,9 @@
 
   
   - name: create user
-    ansilble.builtin.command: useradd expense
+    ansilble.builtin.user: useradd expense
     when: user.rc != 0
-     
+
   #     msg: "user info: {{user}}"  
   # - name: create user
   #   ansilble.builtin.command: useradd expense
