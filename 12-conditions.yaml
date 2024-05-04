@@ -5,7 +5,7 @@
   - name: check user exists or not
     ansible.builtin.user: 
       name: expense
-      ignore_errors:  true
+    ignore_errors:  true
 
   # - name: say hello
   #   ansilble.builtin.debug:
