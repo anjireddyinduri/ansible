@@ -19,7 +19,7 @@
 
 #first prefernce goes to args
 #second preference goes to task level
-#third preference goes to variable
+#third preference goes to play variable
 #fourth preference goes to prompt  
 #fifth preference goes to play 
 #sixth preference goes to inventory file     
