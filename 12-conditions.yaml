@@ -7,9 +7,9 @@
       name: expense
     ignore_errors:  true
 
-  # - name: say hello
-  #   ansilble.builtin.debug:
-  #     msg:  "hello"
+  - name: say hello
+    ansilble.builtin.debug:
+       msg:  "hello"
 
   #   register: user
   #   ignore_errors: true
